@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="default-src 'self'; 
+      frame-src https://zto-one-storage-dev.s3-ap-southeast-1.amazonaws.com/; 
+      script-src 'self' http://localhost:3000;"
+      http-equiv="X-Content-Security-Policy"
+    />
+
+    <!-- 'X-Content-Security-Policy', "default-src 'self'; frame-src
+    https://zto-one-storage-dev.s3-ap-southeast-1.amazonaws.com/2022_10/pdf/;" -->
+    <title>Electron react-to-print demo</title>
+  </head>
+
+  <body>
+    <script>
+      // https://stackoverflow.com/a/67336441/15273968
+      const global = globalThis;
+    </script>
+    <div id="app"></div>
+  </body>
+</html>
